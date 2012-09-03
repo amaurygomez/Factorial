@@ -10,17 +10,6 @@ import java.lang.Math.*;
  */
 public class Code {
 
-    private static void Method() {
-    double factorial = 1;
-// El número elegido para el factorial es el 30
-double numero=30;
-while ( numero!=0) {
-  factorial=factorial*numero;
-  numero--;
-
-    }
-System.out.println(factorial);
-    }
 
     
     
@@ -28,6 +17,6 @@ System.out.println(factorial);
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-      Code.Method();
+      System.out.println("Test");
     }
 }
