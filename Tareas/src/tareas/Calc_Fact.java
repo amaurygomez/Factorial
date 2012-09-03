@@ -172,9 +172,9 @@ public class Calc_Fact extends javax.swing.JFrame {
 
     private void jFormattedTextField1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jFormattedTextField1KeyTyped
       
-       char teclaPulsada = evt.getKeyChar(); // Recoge el valor de la tecla que se pulsó
+       char input = evt.getKeyChar(); 
 
-    if (!Character.isDigit(teclaPulsada)) {  
+    if (!Character.isDigit(input)) {  
         JOptionPane.showMessageDialog(null,  "Por favor introduzca un numero entero positivo", "Alerta",JOptionPane.ERROR_MESSAGE);
         evt.consume(); 
     }
@@ -187,16 +187,16 @@ public class Calc_Fact extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jTextField1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyTyped
-           char teclaPulsada = evt.getKeyChar(); // Recoge el valor de la tecla que se pulsó
+           char input = evt.getKeyChar(); 
 
-    if (!Character.isDigit(teclaPulsada)) {  
+    if (!Character.isDigit(input)) {  
     
         evt.consume(); 
     }
     
-         char teclaPulsada2 = evt.getKeyChar(); // Recoge el valor de la tecla que se pulsó
+         char input2 = evt.getKeyChar();
 
-    if (!Character.isLetter(teclaPulsada)) {  
+    if (!Character.isLetter(input2)) {  
   
         evt.consume(); 
     }
@@ -204,7 +204,7 @@ public class Calc_Fact extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 jTextField1.setText("");
-jFormattedTextField1.setText("");// TODO add your handling code here:
+jFormattedTextField1.setText("");
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
