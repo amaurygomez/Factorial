@@ -70,6 +70,11 @@ public class Calc_Fact extends javax.swing.JFrame {
         });
 
         jButton2.setText("Limpiar ");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -184,6 +189,11 @@ public class Calc_Fact extends javax.swing.JFrame {
         evt.consume(); 
     }
     }//GEN-LAST:event_jTextField1KeyTyped
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+jTextField1.setText("");
+jFormattedTextField1.setText("");// TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
